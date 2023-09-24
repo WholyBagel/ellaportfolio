@@ -1,3 +1,11 @@
+import Link from 'next/link';
+
+
 export const Header:React.FC = () => {
-    return <div>header</div>;
+    return (
+    <div>
+        <Link href="/">Home   </Link>
+        <Link href="/design">Design   </Link>
+    </div>
+    );
 }
