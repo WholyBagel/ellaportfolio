@@ -22,14 +22,6 @@ const DesignIndex:NextPage = () => {
 
     return (
         <main>
-        <div className={styles["image-wrap"]} {...attrs}>
-            <Image
-            src={StaticallyImportedImage}
-            className={styles["image-component"]}
-            fill
-            alt="Peacock with tail fanned out."
-            />
-        </div>
         <div className={styles["text-box"]}>
             <h1>Parallax Effect using next/image</h1>
             <div>
@@ -42,25 +34,6 @@ const DesignIndex:NextPage = () => {
                 <br />
                 Scrolled: {imgOffset}
                 <br />
-                <a
-                href="#"
-                style={{ marginRight: "2rem" }}
-                onClick={(e) => {
-                    e.preventDefault();
-                    setAccelerator(-0.3);
-                }}
-                >
-                Go Faster
-                </a>
-                <a
-                href="#"
-                onClick={(e) => {
-                    e.preventDefault();
-                    setAccelerator(0.5);
-                }}
-                >
-                Go Slower
-                </a>
             </p>
             </div>
         </div>

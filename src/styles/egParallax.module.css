@@ -1,7 +1,8 @@
 .image-wrap {
     position: relative;
-    height: 100vh;
+    height: 20vh;
     width: 100%;
+    z-index: 20
   }
   .image-component {
     object-fit: cover;
@@ -12,10 +13,10 @@
     inset: 0;
     height: fit-content;
     width: fit-content;
-    padding: 2rem;
+    padding: 30rem;
     background-color: rgba(255, 255, 255, 0.9);
-    margin: 0 auto;
-    z-index: 30;
+    margin: 10vh 10vh;
+    z-index: 15;
   }
   .text-box a {
     color: white;
@@ -23,12 +24,12 @@
     border-radius: 3px;
     background-color: rgba(0, 150, 230, 1);
     display: inline-block;
-    margin-top: 1rem;
+    z-index: 15;
   }
   .massive {
     border-top: solid 5px white;
     position: relative;
-    z-index: 20;
+    z-index: 10;
     height: 2000px;
     width: 100%;
     display: flex;
