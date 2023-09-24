@@ -22,21 +22,15 @@ const DesignIndex:NextPage = () => {
 
     return (
         <main>
-        <div className={styles["text-box"]}>
-            <h1>Parallax Effect using next/image</h1>
-            <div>
-            <p>
-                The principle here is to add the parallax effect on a container div.
-            </p>
-            <p>
-                Currently set to {accelerator > 0 ? "Slower" : "Faster"} :<br />
-                Accelerator: {accelerator}
-                <br />
-                Scrolled: {imgOffset}
-                <br />
-            </p>
-            </div>
+        <div className={styles["image-wrap"]} >
+        <Image
+            src={StaticallyImportedImage}
+            className={styles["image-component"]}
+            fill
+            alt="Peacock with tail fanned out."
+        />
         </div>
+
         <div className={styles["massive"]}>
             <p>Srollin’,</p>
             <p>scrollin’,</p>
